@@ -1,0 +1,28 @@
+# La expresión condicional (o ternaria) sirve para hacer un 'if-else' en una sola línea.
+# Es muy útil para guardar un valor en una variable rápidamente.
+
+# Ejemplo 1: Mensaje según la edad
+edad = 17
+mensaje = "Eres mayor de edad." if edad >= 18 else "Eres menor de edad."
+print(mensaje)
+
+# Ejemplo 2: Ver cuál número es más grande
+a = 1
+b = 2
+print("El máximo es:", a if a > b else b)
+
+# Ejemplo 3: Poner categorías (un if dentro de otro en la misma línea)
+edad = 20
+categoria = "Menor" if edad < 18 else ("Joven Adulto" if edad < 30 else "Adulto")
+print(categoria)
+
+# Ejemplo 4: Usarlo dentro de una lista (se llama lista por comprensión)
+numeros = [1, 2, 3, 4, 5]
+paridad = ["par" if n % 2 == 0 else "impar" for n in numeros]
+print(paridad)
+
+# Ejemplo 5: Evitar errores de matemáticas
+dividendo = 10
+divisor = 0
+resultado = dividendo / divisor if divisor != 0 else "División por cero no permitida"
+print(resultado)
